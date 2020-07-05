@@ -23,17 +23,22 @@ int getModule()
 
 int main()
 {
-    bool isValidModule;
+    KtaneCracker myBomb; // This bomb instance
+
     do
     {
         
-        isValidModule = true;
+        myBomb.isValidModule = true;
         switch (getModule())
         {
         case Modules::EXIT:
             return 0; // kills program given exit code
         case Modules::SIMPLE_WIRES:
+        {
+            SimpleWires module;
+            myBomb.isFinished = true;
             break;
+        } 
         case Modules::BUTTON:
             break;
         case Modules::KEYPAD:
@@ -57,9 +62,9 @@ int main()
         default:
             // anything other than above will loop query
             std::cout << "Error!\n";
-            isValidModule = false;
+            myBomb.isValidModule = false;
         }
-    } while (!isValidModule);
+    } while (!myBomb.isValidModule || myBomb.isFinished);
     
 
 }

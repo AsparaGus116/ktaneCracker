@@ -139,10 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Format.cpp" />
     <ClCompile Include="ktaneCracker.cpp" />
+    <ClCompile Include="SimpleWires.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Format.h" />
     <ClInclude Include="ktaneCracker.h" />
+    <ClInclude Include="SimpleWires.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

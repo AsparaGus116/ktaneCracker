@@ -1,8 +1,17 @@
 #pragma once
 
 #include <iostream>
+#include "SimpleWires.h"
+#include "Format.h"
 
 int getModule();
+
+class KtaneCracker
+{
+public:
+	bool isValidModule;
+	bool isFinished;
+};
 
 enum Modules
 {
