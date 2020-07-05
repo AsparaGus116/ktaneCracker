@@ -9,6 +9,8 @@ int getModule();
 class KtaneCracker
 {
 public:
+	KtaneCracker() = default;
+public:
 	bool isValidModule;
 	bool isFinished;
 };

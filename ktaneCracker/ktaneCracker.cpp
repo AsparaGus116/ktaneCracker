@@ -29,6 +29,7 @@ int main()
     {
         
         myBomb.isValidModule = true;
+        myBomb.isFinished = false;
         switch (getModule())
         {
         case Modules::EXIT:
