@@ -15,7 +15,7 @@ int getModule()
     std::cout << "9) Wire Sequences\n";
     std::cout << "10) Maze\n";
     std::cout << "11) Password\n";
-    std::cout << "Enter Module Number (0 to quit): ";
+    std::cout << "Enter Module Number (-1 to quit): ";
     std::cin >> moduleID;
     return moduleID;
     
