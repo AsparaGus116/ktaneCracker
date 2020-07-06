@@ -31,11 +31,13 @@ SimpleWires::SimpleWires()
 	SolveSimple();
 }
 
+/*
 SimpleWires::~SimpleWires()
 {
 	isEven = true;
 	sequence.clear();
 }
+ */
 
 void SimpleWires::SolveSimple()
 {

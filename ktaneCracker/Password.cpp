@@ -74,13 +74,6 @@ Password::Password()
 	std::cout << '\n';
 }
 
-Password::~Password()
-{
-	colOne.clear();
-	colTwo.clear();
-	colThree.clear();
-}
-
 bool Password::IsInColumn(std::string column, char letter)
 {
 		for (auto element : column)

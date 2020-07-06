@@ -11,7 +11,6 @@ class SimpleWires
 public:
 
 	SimpleWires();
-	~SimpleWires();
 	void SolveSimple();
 	
 private:

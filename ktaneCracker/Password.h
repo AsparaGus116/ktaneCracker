@@ -10,7 +10,6 @@ class Password
 {
 public:
 	Password();
-	~Password();
 
 private:
 	bool IsInColumn(std::string column, char letter);
