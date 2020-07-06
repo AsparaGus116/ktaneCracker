@@ -14,8 +14,14 @@ SimpleWires::SimpleWires()
 	std::cout << "Enter wire sequence (without spaces): ";
 	std::cin >> sequence;
 
+	if (sequence == "-1")
+		return;
+
 	std::cout << "What is the last digit of the serial number? ";
 	std::cin >> last_digit;
+
+	if (last_digit == -1)
+		return;
 
 	if (last_digit % 2 == 0)
 		isEven = true;
