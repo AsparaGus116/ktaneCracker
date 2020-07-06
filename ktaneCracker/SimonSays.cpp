@@ -4,7 +4,13 @@ SimonSays::SimonSays()
 {
 	Format::LineBreak();
 
-	GetVariables();
+	while ((containsVowel != false && containsVowel != true)
+		|| strikes > 2 || strikes < 0)
+	{
+		GetVariables();
+		Format::LineBreak();
+	}
+		
 
 	do
 	{
@@ -29,7 +35,7 @@ void SimonSays::GetVariables()
 	std::cin >> vowelInput;
 	if (vowelInput == 'y' || vowelInput == 'Y')
 		containsVowel = true;
-	else
+	else if(vowelInput == 'n' || vowelInput == 'N')
 		containsVowel = false;
 }
 
