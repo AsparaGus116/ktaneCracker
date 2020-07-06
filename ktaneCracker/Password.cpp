@@ -28,7 +28,7 @@ Password::Password()
 	std::cout << "Enter column two (No spaces): ";
 	std::cin >> colTwo;
 
-	int wordCount = 0;
+	wordCount = 0;
 	for (auto element : wordList)
 	{
 		if (colTwo == "-1")
@@ -52,7 +52,7 @@ Password::Password()
 	std::cout << "Enter column three (No spaces): ";
 	std::cin >> colThree;
 
-	int wordCount = 0;
+	wordCount = 0;
 	for (auto element : wordList)
 	{
 		if (colThree == "-1")

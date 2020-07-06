@@ -213,7 +213,7 @@ void Memory::GetDisplay()
 	{
 		std::cout << "What number is the display? ";
 		std::cin >> display;
-	} while (display > 4 || display < 1);
+	} while ((display > 4 || display < 1) && display != -1 );
 }
 
 void Memory::GetPos(int& pos)
