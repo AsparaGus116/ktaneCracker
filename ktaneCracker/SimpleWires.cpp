@@ -138,7 +138,11 @@ void SimpleWires::SolveForSix()
 
 void SimpleWires::PrintResult(std::string str)
 {
-	std::cout << "Cut the " + str + " wire.\n";
+	std::cout << "Cut the ";
+	Window::SetGreenText();
+	std::cout << str;
+	Window::SetWhiteText();
+	std::cout << " wire.\n";
 }
 
 int SimpleWires::findOccurrences(char character)

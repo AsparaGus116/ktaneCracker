@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 #include "Format.h"
+#include "Window.h"
 
 class SimonSays
 {

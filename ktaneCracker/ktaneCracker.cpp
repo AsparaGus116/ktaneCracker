@@ -28,7 +28,6 @@ int main()
 
     do
     {
-        
         myBomb.isValidModule = true;
         myBomb.isFinished = false;
         switch (getModule())

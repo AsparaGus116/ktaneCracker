@@ -2,7 +2,9 @@
 
 #include <string>
 #include <iostream>
+#include <conio.h>
 #include "Format.h"
+#include "Window.h"
 
 class SimpleWires
 {
