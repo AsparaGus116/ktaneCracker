@@ -4,12 +4,12 @@ int getModule()
 {
     // gets current active module
     int moduleID{};
-    std::cout << "1) Simple Wires\n";
+    std::cout << "1) Simple Wires\n"; // Complete
     std::cout << "2) Button\n";
     std::cout << "3) Keypad\n";
-    std::cout << "4) Simon Says\n";
+    std::cout << "4) Simon Says\n"; // Complete
     std::cout << "5) Who\'s On First\n";
-    std::cout << "6) Memory\n";
+    std::cout << "6) Memory\n"; // Complete
     std::cout << "7) Morse Code\n";
     std::cout << "8) Complex Wires\n";
     std::cout << "9) Wire Sequences\n";
@@ -65,7 +65,10 @@ int main()
         case Modules::MAZE:
             break;
         case Modules::PASSWORD:
-            break;
+        {
+            Password module;
+            goto completed;
+        }
         completed: // Sent here after module completion to continue the game loop
             Format::LineBreak();
             myBomb.isFinished = true;

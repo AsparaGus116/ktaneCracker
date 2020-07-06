@@ -142,6 +142,7 @@
     <ClCompile Include="Format.cpp" />
     <ClCompile Include="ktaneCracker.cpp" />
     <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="Password.cpp" />
     <ClCompile Include="SimonSays.cpp" />
     <ClCompile Include="SimpleWires.cpp" />
     <ClCompile Include="Window.cpp" />
@@ -150,6 +151,7 @@
     <ClInclude Include="Format.h" />
     <ClInclude Include="ktaneCracker.h" />
     <ClInclude Include="Memory.h" />
+    <ClInclude Include="Password.h" />
     <ClInclude Include="SimonSays.h" />
     <ClInclude Include="SimpleWires.h" />
     <ClInclude Include="Window.h" />

@@ -5,6 +5,7 @@
 #include "Format.h"
 #include "SimonSays.h"
 #include "Memory.h"
+#include "Password.h"
 
 int getModule();
 
