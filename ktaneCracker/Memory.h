@@ -37,4 +37,6 @@ private:
 	
 	int Pos4;
 	int Lab4;
+
+	bool hasQuit = false;
 };

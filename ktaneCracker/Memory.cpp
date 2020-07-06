@@ -3,15 +3,35 @@
 Memory::Memory()
 {
 	StageOne();
+
+	if (hasQuit)
+		return;
+
 	StageTwo();
+
+	if (hasQuit)
+		return;
+
 	StageThree();
+
+	if (hasQuit)
+		return;
+
 	StageFour();
+
+	if (hasQuit)
+		return;
+
 	StageFive();
 }
 
 void Memory::StageOne()
 {
 	GetDisplay();
+
+	if (display == -1)
+		hasQuit = true;
+	return;
 
 	if (display == 1 || display == 2)
 	{
@@ -35,6 +55,10 @@ void Memory::StageOne()
 void Memory::StageTwo()
 {
 	GetDisplay();
+
+	if (display == -1)
+		hasQuit = true;
+		return;
 
 	if (display == 1)
 	{
@@ -61,6 +85,10 @@ void Memory::StageTwo()
 void Memory::StageThree()
 {
 	GetDisplay();
+
+	if (display == -1)
+		hasQuit = true;
+	return;
 
 	if (display == 1)
 	{
@@ -93,6 +121,10 @@ void Memory::StageThree()
 void Memory::StageFour()
 {
 	GetDisplay();
+
+	if (display == -1)
+		hasQuit = true;
+	return;
 
 	if (display == 1)
 	{
