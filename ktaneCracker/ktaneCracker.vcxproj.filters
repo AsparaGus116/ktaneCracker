@@ -24,6 +24,9 @@
     <ClCompile Include="Format.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SimonSays.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ktaneCracker.h">
@@ -33,6 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimonSays.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

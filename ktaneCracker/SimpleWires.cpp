@@ -23,8 +23,6 @@ SimpleWires::SimpleWires()
 		isEven = false;
 
 	SolveSimple();
-
-	Format::LineBreak();
 }
 
 SimpleWires::~SimpleWires()

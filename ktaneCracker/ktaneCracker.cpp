@@ -21,6 +21,7 @@ int getModule()
     
 }
 
+
 int main()
 {
     KtaneCracker myBomb; // This bomb instance
@@ -37,15 +38,17 @@ int main()
         case Modules::SIMPLE_WIRES:
         {
             SimpleWires module;
-            myBomb.isFinished = true;
-            break;
+            goto completed;
         } 
         case Modules::BUTTON:
             break;
         case Modules::KEYPAD:
             break;
         case Modules::SIMON_SAYS:
-            break;
+        {
+            SimonSays module;
+            goto completed;
+        }
         case Modules::WHOS_ON_FIRST:
             break;
         case Modules::MEMORY:
@@ -59,6 +62,10 @@ int main()
         case Modules::MAZE:
             break;
         case Modules::PASSWORD:
+            break;
+        completed:
+            Format::LineBreak();
+            myBomb.isFinished = true;
             break;
         default:
             // anything other than above will loop query
