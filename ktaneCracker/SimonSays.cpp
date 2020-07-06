@@ -66,13 +66,13 @@ void SimonSays::PrintSequence()
 
 void SimonSays::print(std::string text)
 {
-	if (text == "RED")
+	if (text == red)
 		Window::SetRedText();
-	else if (text == "BLUE")
+	else if (text == blue)
 		Window::SetBlueText();
-	else if (text == "GREEN")
+	else if (text == green)
 		Window::SetGreenText();
-	else if (text == "YELLOW")
+	else if (text == yellow)
 		Window::SetYellowText();
 	std::cout << text + " ";
 	Window::SetWhiteText();
