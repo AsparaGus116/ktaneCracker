@@ -171,7 +171,7 @@ void Memory::PrintLab(int num)
 {
 	std::cout << "Press the button ";
 	Window::SetGreenText();
-	std::cout << "LABELED " + num + '\n';
+	std::cout << "LABELED " << num << '\n';
 	Window::SetWhiteText();
 }
 
