@@ -4,6 +4,7 @@
 #include "SimpleWires.h"
 #include "Format.h"
 #include "SimonSays.h"
+#include "Memory.h"
 
 int getModule();
 

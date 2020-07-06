@@ -26,7 +26,7 @@ int main()
 {
     KtaneCracker myBomb; // This bomb instance
 
-    do
+    do // Game loop, controls module path
     {
         myBomb.isValidModule = true;
         myBomb.isFinished = false;
@@ -51,7 +51,11 @@ int main()
         case Modules::WHOS_ON_FIRST:
             break;
         case Modules::MEMORY:
-            break;
+        {
+            Memory module;
+            goto completed;
+        }
+            
         case Modules::MORSE_CODE:
             break;
         case Modules::COMPLEX_WIRES:
@@ -62,7 +66,7 @@ int main()
             break;
         case Modules::PASSWORD:
             break;
-        completed:
+        completed: // Sent here after module completion to continue the game loop
             Format::LineBreak();
             myBomb.isFinished = true;
             break;
